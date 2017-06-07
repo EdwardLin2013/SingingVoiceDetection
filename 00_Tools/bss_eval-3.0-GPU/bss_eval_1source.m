@@ -1,4 +1,4 @@
-function [SDR, SIR, SAR] = bss_eval_sdr(se,s)
+function [SDR, SIR, SAR] = bss_eval_1source(se,s)
 
 %%% Performance criteria %%%
 [s_true,e_spat,e_interf,e_artif] = bss_decomp_mtifilt(se(1,:),s,512);
